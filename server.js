@@ -22,14 +22,14 @@ db.mongoose
         process.exit();
     });
 
-    app.get("/", (req, res) => {
-        res.status(200);
-        res.json({ messaage: "welcome to Capstone Project" });
-    })
+app.get("/", (req, res) => {
+    res.status(200);
+    res.json({ messaage: "welcome to Capstone Project" });
+})
 
-    require("./routes/user.routes")(app);
-    // require("./routes/addresses.routes")(app);
+require("./routes/user.routes")(app);
+require("./routes/addresses.routes")(app);
 
-    app.listen(port, () => {
-        console.log(`Connection Established on Port ${port}`);
-    });
+app.listen(port, () => {
+    console.log(`Connection Established on Port ${port}`);
+});
