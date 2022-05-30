@@ -29,6 +29,7 @@ app.get("/", (req, res) => {
 
 require("./routes/user.routes")(app);
 require("./routes/addresses.routes")(app);
+require("./routes/product.routes")(app);
 
 app.listen(port, () => {
     console.log(`Connection Established on Port ${port}`);
