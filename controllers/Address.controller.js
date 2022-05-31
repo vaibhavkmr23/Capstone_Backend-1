@@ -37,7 +37,7 @@ exports.addAddress = (req, res) => {
         res.send(data);
     }).catch((err) => {
         res.status(500).send({
-            message: "some error occurred while creating the course", err
+            message: "some error occurred while creating the Address", err
         });
     });
 }
